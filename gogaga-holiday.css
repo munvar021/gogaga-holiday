@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+.navbar-position {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
 .nav-heading {
     font-family: "Roboto";
     font-size: 24px;
@@ -22,6 +30,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:575px) {
+    .welcome-heading-1 {
+        font-size: 25px;
+    }
+
+    .welcome-heading-2 {
+        font-size: 25px;
+    }
+
+    .welcome-heading-3 {
+        font-size: 25px;
+    }
 }
 
 .welcome-heading-1 {
@@ -82,102 +104,6 @@
     border-radius: 20px;
 }
 
-/* Hotel Rooms Section */
-.hotel-booking-title {
-    font-family: "Roboto";
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 10px;
-    color: #ffffff;
-}
-
-.item-heading {
-    width: 80vw;
-    color: #ffffff;
-}
-
-.stay-time {
-    display: flex;
-    justify-content: flex-start;
-}
-
-@media (min-width:992px) {
-    .hotels-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.hotel-room-card {
-    display: flex;
-    flex-grow: 1;
-    padding: 10px;
-}
-
-@media (min-width:992px) {
-    .hotel-room-card {
-        display: flex;
-        width: 48%;
-        flex-grow: 1;
-        padding: 10px;
-    }
-}
-
-.hotel-room-card-description {
-    margin: 0px 10px;
-}
-
-.hotel-name {
-    font-size: 20px;
-    font-family: "Roboto";
-    margin-top: 5px;
-    color: #ffffff;
-}
-
-.refund-status {
-    background-color: #ffffff20;
-    color: #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.hotel-location {
-    font-size: 18px;
-    font-family: "Times New Roman";
-    color: #ffffff;
-}
-
-.hotel-button {
-    color: #ffffff;
-    background-color: transparent;
-    border-radius: 10px;
-    border-width: 0px;
-    margin: 0px;
-}
-
-.rating-icon {
-    color: #d0b200;
-}
-
-.hotel-price {
-    color: red;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.room-images {
-    width: 120px;
-}
-
-@media (min-width:992px) {
-    .room-images {
-        height: 200px;
-        width: 250px;
-    }
-}
-
-/* ************************************************ */
-
 /* Holiday Packages */
 .india-tour-main-heading {
     font-family: "Roboto";
@@ -196,25 +122,40 @@
 
 .india-tours-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px 10px;
     flex-wrap: wrap;
     padding-right: 10px;
+}
+
+@media (min-width:768px) {
+    .india-tours-container {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 10px;
+        flex-wrap: wrap;
+        padding-right: 10px;
+    }
 }
 
 .tour-card-alignment {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 10px 0px;
-    padding: 10px 10px;
-    height: 200px;
-    width: 300px;
+    margin: 10px 1px;
+    padding: 15px 10px;
+    height: 400px;
+    width: 182px;
+    flex-grow: 1;
 }
 
-@media (min-height:201px) {
+@media (min-width:576px) {
     .tour-card-alignment {
         height: 400px;
+        width: 400px;
+        flex-grow: 1;
     }
 }
 
@@ -266,6 +207,107 @@
 
 /* ********************************************************* */
 
+/* Hotel Rooms Section */
+.hotel-booking-title {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.item-heading {
+    width: 80vw;
+    color: #ffffff;
+}
+
+@media (min-width:576px) {
+    .stay-time {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width:576px) {
+    .hotels-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.hotel-room-card {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+@media (min-width:576px) {
+    .hotel-room-card {
+        display: flex;
+        width: 48%;
+        flex-grow: 1;
+        padding: 10px;
+    }
+}
+
+.hotel-room-card-description {
+    margin: 0px 10px;
+}
+
+.hotel-name {
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.refund-status {
+    background-color: #ffffff20;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.hotel-location {
+    font-size: 18px;
+    font-family: "Times New Roman";
+    color: #ffffff;
+}
+
+.hotel-button {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+.rating-icon {
+    color: #d0b200;
+}
+
+.hotel-price {
+    color: red;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.room-images {
+    width: 120px;
+}
+
+@media (min-width:992px) {
+    .room-images {
+        height: 200px;
+        width: 250px;
+    }
+}
+
+/* ************************************************ */
+
+
+
 /* Flight Bookings */
 .flight-booking-title {
     font-family: "Roboto";
@@ -292,6 +334,13 @@
     margin-top: 15px;
 }
 
+@media (max-width:575px) {
+    .travel-time {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* ************************************************************ */
 
 /* Collection Packages */
@@ -314,15 +363,27 @@
     width: auto;
 }
 
+@media (max-width:575px) {
+    .collections-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .collections-card {
     display: flex;
     margin: 10px 0px;
+    background-color: #ffffff20;
+    border-radius: 10px;
 }
 
 .collections-images {
     height: 250px;
     width: 200px;
     border-radius: 10px;
+    flex-grow: 1;
 }
 
 .collection-card-heading-information {
@@ -353,25 +414,26 @@
     text-align: center;
     color: #183b56;
     font-family: "Roboto";
-    font-size: 28px;
+    font-size: 14px;
     font-weight: 700;
 }
 
 .follow-us-icon-container {
     background-color: #faf7e8;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    margin: 15px;
-    padding-top: 22px;
-    padding-bottom: 14px;
-    padding-right: 16px;
-    padding-left: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 7px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 8px;
+    padding-left: 9px;
+    text-align: center;
 }
 
 .footer-icon {
     color: #d0b200;
-    font-size: 35px;
+    font-size: 18px;
 }
 
 .footer-section {
@@ -383,12 +445,12 @@
     color: black;
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 16px;
-    margin-top: 20px;
+    font-size: 10px;
+    margin-top: 10px;
 }
 
 .footer-section-address {
     color: black;
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 10px;
 }
