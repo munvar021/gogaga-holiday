@@ -10,27 +10,31 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6b8bf61aa8.js" crossorigin="anonymous"></script>
     <title> Gogaga Holiday</title>
+    <link rel="stylesheet" href="gogaga-holiday.css">
 </head>
 
 <body>
     <div class="bg-container">
         <div id="navbar-container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <a class="navbar-brand" href="#">
-                    <h1 class="nav-heading">Gogaga Holidays</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="#holiday-packages">Holiday Packages</a>
-                        <a class="nav-link" href="#flights">Flights</a>
-                        <a class="nav-link" href="#hotels">Hotels</a>
-                        <a class="nav-link" href="#collections">Package Collections</a>
+            <div class="navbar-position">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <a class="navbar-brand" href="#">
+                        <h1 class="nav-heading">Gogaga Holidays</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-link" href="#holiday-packages">Holiday Packages</a>
+                            <a class="nav-link" href="#flights">Flights</a>
+                            <a class="nav-link" href="#hotels">Hotels</a>
+                            <a class="nav-link" href="#collections">Package Collections</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+
             <section>
                 <div class="home-container">
                     <div class="text-center">
@@ -67,6 +71,7 @@
                 </div>
             </section>
         </div>
+
         <div class="whole-section-backbround">
             <section id="holiday-packages">
                 <div class="gradient-color shadow-lg ">
@@ -151,6 +156,7 @@
                     </div>
                 </div>
             </section>
+
             <section id="hotels">
                 <div class="gradient-color">
                     <h1 class="hotel-booking-title"><i class="fa-solid fa-hotel icon mr-3"></i>Hotel Booking <br /></h1>
@@ -161,15 +167,15 @@
                             <input type="text" id="hotel-name" name="hotel-name" class="form-control">
                         </div>
                         <div class="stay-time">
-                            <div>
+                            <div class="mr-3">
                                 <label for="check-in">Check-in Date</label>
                                 <input type="date" id="check-in" name="check-in" class="form-control">
                             </div>
-                            <div class="ml-3">
+                            <div class="mr-3">
                                 <label for="check-out">Check-out Date</label>
                                 <input type="date" id="check-out" name="check-out" class="form-control">
                             </div>
-                            <div class="ml-3">
+                            <div class="mr-3">
                                 <label for="guests" class="">Guests</label>
                                 <select id="guests" name="guests" class="form-control">
                                     <option value="1">1 Adult</option>
@@ -181,7 +187,7 @@
                         </div>
                         <button type="submit" class="btn btn-danger mt-3">Search Hotels</button>
                     </form>
-                    <div class="hotels-container">
+                    <div class="hotels-container mt-4">
                         <div class="hotel-room-card">
                             <img class="room-images" src="https://pix4.agoda.net/hotelimages/874/874183/874183_15031218580026046648.jpg?s=312x" />
                             <div class="hotel-room-card-description">
@@ -270,7 +276,7 @@
                             </div>
                         </div>
                         <div class="hotel-room-card">
-                            <img class="room-images" src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                            <img class="room-images" src="https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                             <div class="hotel-room-card-description">
                                 <h1 class="hotel-name">Hotel Neem Tree <span class="refund-status">Non-Refundable</span></h1>
                                 <p class="hotel-location mb-0">Chennai</p>
@@ -300,6 +306,7 @@
                     </div>
                 </div>
             </section>
+
             <section id="flights">
                 <div class="gradient-color">
                     <h1 class="flight-booking-title"><i class="fa-solid fa-plane-departure mr-3"></i>Flight Booking</h1>
@@ -335,7 +342,7 @@
                                 <input type="text" id="destination" name="destination" class="form-control">
                             </div>
                         </div>
-                        <div class="input-labels">
+                        <div class="input-labels travel-time">
                             <div class="pr-1">
                                 <label for="departure-date">Departure Date</label>
                                 <input type="date" id="departure-date" name="departure-date" class="form-control">
@@ -362,6 +369,7 @@
                 </div>
 
             </section>
+
             <section id="collections">
                 <div class="gradient-color pt-3">
                     <h1 class="collections-main-heading"><i class="fa-regular fa-bookmark"></i> Collections</h1>
@@ -399,7 +407,8 @@
                     </div>
                 </div>
             </section>
-            <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+
+            <div class="follow-us-section pt-2 pb-2" id="followUsSection">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -425,7 +434,7 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <i class="fa-solid fa-hotel icon"></i>
-                        <h1 class="heading">Gogaga Holidays</h1>
+                        <h1 class="follow-us-section-heading">Gogaga Holidays</h1>
                         <h1 class="footer-section-mail-id">booktour@Gogaga.com</h1>
                         <p class="footer-section-address">
                             123 Ayur Vigyan Nagar, New Delhi, India.
