@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.nav-heading {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.bg-container {
+    max-height: 150vh;
+    background-image: url("https://images.pexels.com/photos/3601421/pexels-photo-3601421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+}
+
+.home-container {
+    height: 90vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-heading-1 {
+    font-family: "Poppins";
+    color: #ffffff;
+}
+
+.welcome-heading-2 {
+    font-family: "Copperplate";
+    color: #ffffff;
+}
+
+.welcome-heading-3 {
+    font-family: "Times New Roman";
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.icons-container {
+    background-color: #ffffff20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.icon-card {
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 10px 0px;
+}
+
+.icon {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.cards-heading {
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.whole-section-backbround {
+    background-image: url("https://w0.peakpx.com/wallpaper/722/152/HD-wallpaper-maldives-sunrise-resort-beautiful-sea-beach-walkway-paradise-bungalows-summer-sunrise-tropical.jpg");
+    background-size: cover;
+}
+
+.gradient-color {
+    background-color: #ffffff20;
+    background-size: cover;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* Hotel Rooms Section */
+.hotel-booking-title {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.item-heading {
+    width: 80vw;
+    color: #ffffff;
+}
+
+.stay-time {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (min-width:992px) {
+    .hotels-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.hotel-room-card {
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+@media (min-width:992px) {
+    .hotel-room-card {
+        display: flex;
+        width: 48%;
+        flex-grow: 1;
+        padding: 10px;
+    }
+}
+
+.hotel-room-card-description {
+    margin: 0px 10px;
+}
+
+.hotel-name {
+    font-size: 20px;
+    font-family: "Roboto";
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.refund-status {
+    background-color: #ffffff20;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.hotel-location {
+    font-size: 18px;
+    font-family: "Times New Roman";
+    color: #ffffff;
+}
+
+.hotel-button {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 10px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+.rating-icon {
+    color: #d0b200;
+}
+
+.hotel-price {
+    color: red;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.room-images {
+    width: 120px;
+}
+
+@media (min-width:992px) {
+    .room-images {
+        height: 200px;
+        width: 250px;
+    }
+}
+
+/* ************************************************ */
+
+/* Holiday Packages */
+.india-tour-main-heading {
+    font-family: "Roboto";
+    text-align: center;
+    color: #ffffff;
+}
+
+.india-tour-description {
+    font-family: "Roboto";
+    color: #ffffff;
+}
+
+.india-tour-information-container {
+    margin: 10px;
+}
+
+.india-tours-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+.tour-card-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    height: 200px;
+    width: 300px;
+}
+
+@media (min-height:201px) {
+    .tour-card-alignment {
+        height: 400px;
+    }
+}
+
+.india-tour-card-heading {
+    font-family: "Times New Roman";
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.india-tour-card-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.lakshadweep-tour-card {
+    background-image: url("https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1000/https://adventuresome.in/wp-content/uploads/2019/08/lakshadweep-islands-2.jpg");
+    background-size: cover;
+}
+
+
+.kerala-tour-card {
+    background-image: url("https://s1.1zoom.me/big3/524/India_Rivers_Riverboat_Alappuzha_Kerala_Palms_527898_3452x2295.jpg");
+    background-size: cover;
+}
+
+.ayodhya-tour-card {
+    background-image: url("https://cdn.pixabay.com/photo/2023/08/25/14/19/ai-generated-8213147_1280.jpg");
+    background-size: cover;
+}
+
+.andaman-tour-card {
+    background-image: url("https://travelogyindia.b-cdn.net/storage/app/upload/havelock-island-in-andaman-banner.jpg");
+    background-size: cover;
+}
+
+.himalaya-tour-card {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/384/818/513/himalayas-mountains-landscape-nature-wallpaper-preview.jpg");
+    background-size: cover;
+}
+
+.ooty-tour-card {
+    background-image: url("https://www.tamilnadutourism.tn.gov.in/img/pages/large-desktop/ooty-1655457424_bca80f81e8391ebdaaca.webp");
+    background-size: cover;
+}
+
+
+/* ********************************************************* */
+
+/* Flight Bookings */
+.flight-booking-title {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.item-heading {
+    width: 80vw;
+}
+
+.form-container {
+    background-color: #ffffff20;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.input-labels {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+/* ************************************************************ */
+
+/* Collection Packages */
+
+.collections-main-heading {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    display: flex;
+    width: auto;
+}
+
+.collections-card {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.collections-images {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.collection-card-heading-information {
+    align-self: center;
+    padding-left: 20px;
+}
+
+.collection-card-heading {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.collection-card-description {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* ********************************* */
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.footer-icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: grey;
+    padding-top: 20px;
+}
+
+.footer-section-mail-id {
+    color: black;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: black;
+    font-family: "Roboto";
+    font-size: 14px;
+}
